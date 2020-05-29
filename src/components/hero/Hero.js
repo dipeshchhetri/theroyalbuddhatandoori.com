@@ -4,7 +4,7 @@ import React from "react"
 const Hero = ({ image }) => (
   <div style={{
     backgroundImage: `url('${image}')`,
-    height: 'calc(100vh - 200px)',
+    height: 'calc(100vh - 250px)',
     minHeight: 300,
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
