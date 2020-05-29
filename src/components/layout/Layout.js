@@ -31,7 +31,7 @@ const Layout = ({ children }) => (
       </main>
       <footer style={s.footer}>
         <hr style={s.hr} className="d-md-none" />
-        <nav className="d-md-none row" style={s.nav}>
+        <nav className="d-md-none row no-gutters" style={s.nav}>
           <Link
             className="col"
             to="/contact-us"
