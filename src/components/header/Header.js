@@ -12,8 +12,13 @@ const Header = () => (
   <header className={s.root}>
     <nav className="container">
       <div className="row justify-content-center">
-        <div className="col row justify-content-center text-center align-items-center">
-          <div className="col" />
+        <Link
+          className="col-auto order-md-2"
+          to="/"
+        >
+          <img className={s.logo} src={logo} alt="The Royal Buddha Tandoori Logo" loading="lazy" />
+        </Link>
+        <div className="col-12 col-md row justify-content-center text-center align-items-center order-md-1">
           <Link
             className="col"
             to="/menu"
@@ -33,13 +38,7 @@ const Header = () => (
             Gallery
           </Link>
         </div>
-        <Link
-          className="col-auto"
-          to="/"
-        >
-          <img className={s.logo} src={logo} width="100" height="100" alt="The Royal Buddha Tandoori Logo" loading="lazy" />
-        </Link>
-        <div className="col row justify-content-center text-center align-items-center">
+        <div className="col-12 col-md row justify-content-center text-center align-items-center order-md-3 d-none d-md-flex">
           <Link
             className="col"
             to="/contact-us"

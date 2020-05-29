@@ -11,7 +11,6 @@ export default ({ children, icon, style }) => {
   return (
     children ? (
       <span style={{
-        display: 'flex',
         ...style
       }}>
         <Icon {...props} style={iconStyle}/>
