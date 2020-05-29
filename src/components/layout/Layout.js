@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "../header/index"
 
@@ -15,34 +14,22 @@ const s = {
   }
 }
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div>
-        <main>
-          {children}
-        </main>
-        <footer style={s.footer}>
-          <hr style={s.hr} />
-          © Copyright {new Date().getFullYear()}.
-          {` `}
-          Made by <a href="https://sandeshshrestha.com">Sandesh Shrestha</a>
-        </footer>
-      </div>
-    </>
-  )
-}
+const Layout = ({ children }) => (
+  <>
+    <Header />
+    <div>
+      <main>
+        {children}
+      </main>
+      <footer style={s.footer}>
+        <hr style={s.hr} />
+        © Copyright {new Date().getFullYear()}.
+        {` `}
+        Made by <a href="https://sandeshshrestha.com">Sandesh Shrestha</a>
+      </footer>
+    </div>
+  </>
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
