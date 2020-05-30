@@ -1,8 +1,8 @@
-import PropTypes from "prop-types"
-import React from "react"
-import cn from 'classnames'
+import PropTypes from 'prop-types';
+import React from 'react';
+import cn from 'classnames';
 
-import s from './article.module.scss'
+import s from './article.module.scss';
 
 const Image = ({ image, style, className }) => (
   <div style={{
@@ -27,11 +27,15 @@ const Article = ({ title, image, children, className }) => (
 )
 
 Article.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string,
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+};
 
 Article.defaultProps = {
-  siteTitle: ``,
-}
+  image: '',
+  className: '',
+};
 
-export default Article
+export default Article;

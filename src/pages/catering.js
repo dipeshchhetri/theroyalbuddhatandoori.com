@@ -1,11 +1,11 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
-import Layout from "../components/layout/index"
-import SEO from "../components/seo/index"
-import Article from "../components/article/index"
+import Layout from '../components/layout/index';
+import SEO from '../components/seo/index';
+import Article from '../components/article/index';
 
-import image from '../images/the-royal-buddha-tandoori.jpg'
+import image from '../images/the-royal-buddha-tandoori.jpg';
 
 const CateringPage = () => {
   const { site: { siteMetadata: { phone }} } = useStaticQuery(
@@ -18,7 +18,7 @@ const CateringPage = () => {
         }
       }
     `
-  )
+  );
 
   return (
     <Layout>

@@ -1,15 +1,15 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
-import cn from 'classnames'
+import { Link } from 'gatsby';
+import React from 'react';
+import cn from 'classnames';
+import PropTypes from 'prop-types';
 
-import logo from '../../images/logo.jpg'
+import logo from '../../images/logo.jpg';
 import Facebook from '../../icons/facebook';
 import Tripadvisor from '../../icons/tripadvisor';
 
 import s from './header.module.scss'
 
-const Header = () => (
+const Header = ({ facebook, tripadvisor }) => (
   <header className={s.root}>
     <nav className="container">
       <div className="row justify-content-center">
@@ -46,24 +46,21 @@ const Header = () => (
           >
             Contact us
           </Link>
-          <a className="col" href="https://www.facebook.com/royalbuddhatandoori" rel="noreferrer" target="_blank">
+          <a className="col" href={facebook} rel="noreferrer" target="_blank">
             <Facebook>Facebook</Facebook>
           </a>
-          <a className="col" rel="noreferrer" href="https://www.tripadvisor.com/Restaurant_Review-g736284-d6914859-Reviews-The_Royal_Buddha_Tandoori-Moraira_Costa_Blanca_Province_of_Alicante_Valencian_Cou.html" target="_blank">
+          <a className="col" rel="noreferrer" href={tripadvisor} target="_blank">
             <Tripadvisor>Tripadvisor</Tripadvisor>
           </a>
         </div>
       </div>
     </nav>
   </header>
-)
+);
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  facebook: PropTypes.string.isRequired,
+  tripadvisor: PropTypes.string.isRequired,
+};
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default Header;

@@ -1,10 +1,10 @@
-import React from "react"
+import React from 'react';
 
-import Layout from "../components/layout/index"
-import SEO from "../components/seo/index"
-import Hero from "../components/hero/index"
+import Layout from '../components/layout/index';
+import SEO from '../components/seo/index';
+import Hero from '../components/hero/index';
 
-import bannerImage from '../images/the-royal-buddha-tandoori-front.jpg'
+import bannerImage from '../images/the-royal-buddha-tandoori-front.jpg';
 
 const IndexPage = () => (
   <Layout>

@@ -1,6 +1,7 @@
-import React from "react"
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export default ({ children, icon, style }) => {
+const Icon = ({ children, icon, style }) => {
   const { type: Icon, props } = icon;
   const iconStyle = {
     height: 20,
@@ -24,3 +25,15 @@ export default ({ children, icon, style }) => {
     )
   );
 };
+
+Icon.propTypes = {
+  children: PropTypes.string,
+  icon: PropTypes.node.isRequired,
+  style: PropTypes.object,
+};
+
+Icon.defaultProps = {
+  children: ''
+};
+
+export default Icon;

@@ -1,11 +1,11 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from 'gatsby';
 
-import Layout from "../components/layout/index"
-import SEO from "../components/seo/index"
-import Article from "../components/article/index"
+import Layout from '../components/layout/index';
+import SEO from '../components/seo/index';
+import Article from '../components/article/index';
 
-import image from '../images/royal-buddha-tandoori-contact.jpg'
+import image from '../images/royal-buddha-tandoori-contact.jpg';
 
 import s from './contactus.module.scss';
 

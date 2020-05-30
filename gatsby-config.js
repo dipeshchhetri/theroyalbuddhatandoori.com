@@ -4,7 +4,9 @@ module.exports = {
     description: `The Royal Buddha Tandoori Moraira website`,
     author: `@sandeshsth`,
     phone: '+34966490830',
-    email: 'royalbuddhatandoori@gmail.com'
+    email: 'royalbuddhatandoori@gmail.com',
+    facebook: 'https://www.facebook.com/royalbuddhatandoori',
+    tripadvisor: 'https://www.tripadvisor.com/Restaurant_Review-g736284-d6914859-Reviews-The_Royal_Buddha_Tandoori-Moraira_Costa_Blanca_Province_of_Alicante_Valencian_Cou.html'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

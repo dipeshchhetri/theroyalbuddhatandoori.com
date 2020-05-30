@@ -1,5 +1,5 @@
-import PropTypes from "prop-types"
-import React from "react"
+import PropTypes from 'prop-types';
+import React from 'react';
 
 const Hero = ({ image }) => (
   <div style={{
@@ -16,6 +16,6 @@ const Hero = ({ image }) => (
 
 Hero.propTypes = {
   image: PropTypes.string.isRequired
-}
+};
 
 export default Hero;
