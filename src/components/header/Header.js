@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import cn from 'classnames'
 
 import logo from '../../images/logo.jpg'
 import Facebook from '../../icons/facebook';
@@ -18,7 +19,7 @@ const Header = () => (
         >
           <img className={s.logo} src={logo} alt="The Royal Buddha Tandoori Logo" loading="lazy" />
         </Link>
-        <div className="col-12 col-md row justify-content-center text-center align-items-center order-md-1">
+        <div className={cn(s.leftNav, "col-12 col-md row justify-content-center text-center align-items-center order-md-1")}>
           <Link
             className="col"
             to="/menu"

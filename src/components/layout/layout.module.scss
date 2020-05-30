@@ -1,0 +1,22 @@
+.root {
+  .hr {
+    margin: 1rem 0;
+  }
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 1rem;
+    margin-top: -1rem;
+  }
+  .nav {
+    font-size: 16px;
+
+    a {
+      color: #414141;
+
+      &:hover {
+        color: #414141;
+      }
+    }
+  }
+}

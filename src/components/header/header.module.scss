@@ -10,15 +10,20 @@ padding: 20px 0 10px 0;
   }
 
   a {
-    color: #fff;
+    color: #414141;
 
     &:hover {
-      color: #fff;
+      color: #414141;
     }
+  }
+
+  .leftNav {
+    border-top: 1px solid #414141;
+    padding-top: 10px;
   }
 }
 
-@media only screen and (min-width: 569px) {
+@media only screen and (min-width: 768px) {
   .root {
     padding: 20px 0;
 
@@ -26,6 +31,11 @@ padding: 20px 0 10px 0;
       height: 100px;
       width: 100px;
       margin-bottom: 0;
+    }
+
+    .leftNav {
+      border-top: 0;
+      padding-top: 0;
     }
   }
 }
