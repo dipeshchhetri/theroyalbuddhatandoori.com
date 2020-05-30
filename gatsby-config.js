@@ -25,8 +25,8 @@ module.exports = {
         name: `TheRoyalBuddhaTandoori`,
         short_name: `TheRoyalBuddhaTandoori`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#ffc32d`,
+        theme_color: `#ffc32d`,
         display: `minimal-ui`,
         icon: `src/images/logo.jpg`, // This path is relative to the root of the site.
       },
