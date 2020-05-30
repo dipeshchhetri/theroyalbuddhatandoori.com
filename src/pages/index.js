@@ -8,7 +8,7 @@ import bannerImage from '../images/the-royal-buddha-tandoori-front.jpg'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="The Royal Buddha Tandoori" />
     <Hero image={bannerImage} />
   </Layout>
 )

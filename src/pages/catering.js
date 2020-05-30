@@ -17,7 +17,7 @@ const menuImages = [menu1, menu2, menu3, menu4, menu5, menu6, menu7];
 
 const CateringPage = () => (
   <Layout>
-    <SEO title="Page two" />
+  <SEO title="The Royal Buddha Tandoori catering" />
     <div className="container">
       {menuImages.map(x => (
         <img className={s.image} key={x} src={x} alt="The Royal Buddha Tandoori menu" loading="lazy" />
