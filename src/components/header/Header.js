@@ -42,7 +42,7 @@ const Header = () => (
         <div className="col-12 col-md row justify-content-center text-center align-items-center order-md-3 d-none d-md-flex">
           <Link
             className="col"
-            to="/contact-us"
+            to="/contactus"
           >
             Contact us
           </Link>

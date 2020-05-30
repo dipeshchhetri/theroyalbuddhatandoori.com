@@ -22,7 +22,7 @@ const Layout = ({ children }) => (
         <nav className={cn(s.nav, 'd-md-none row no-gutters')}>
           <Link
             className="col"
-            to="/contact-us"
+            to="/contactus"
           >
             Contact us
           </Link>

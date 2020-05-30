@@ -1,29 +1,34 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout/index"
 import SEO from "../components/seo/index"
+import Article from "../components/article/index"
 
-import menu1 from '../images/menu/1.jpg'
-import menu2 from '../images/menu/2.jpg'
-import menu3 from '../images/menu/3.jpg'
-import menu4 from '../images/menu/4.jpg'
-import menu5 from '../images/menu/5.jpg'
-import menu6 from '../images/menu/6.jpg'
-import menu7 from '../images/menu/7.jpg'
+import image from '../images/the-royal-buddha-tandoori.jpg'
 
-import s from './menu.module.scss';
+const CateringPage = () => {
+  const { site: { siteMetadata: { phone }} } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            phone
+          }
+        }
+      }
+    `
+  )
 
-const menuImages = [menu1, menu2, menu3, menu4, menu5, menu6, menu7];
-
-const CateringPage = () => (
-  <Layout>
-  <SEO title="The Royal Buddha Tandoori catering" />
-    <div className="container">
-      {menuImages.map(x => (
-        <img className={s.image} key={x} src={x} alt="The Royal Buddha Tandoori menu" loading="lazy" />
-      ))}
-    </div>
-  </Layout>
-)
+  return (
+    <Layout>
+    <SEO title="The Royal Buddha Tandoori catering" />
+    <Article className="container" title="Catering" image={image}>
+      <p>We offer catering service as well. So you can order the best nepalese and indian food from your home.</p>
+      <a className="btn btn-primary btn-lg" href={`tel://${phone}`} role="button">Call us</a>
+    </Article>
+    </Layout>
+  );
+};
 
 export default CateringPage;

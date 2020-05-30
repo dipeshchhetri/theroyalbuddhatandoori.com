@@ -3,6 +3,8 @@ module.exports = {
     title: `TheRoyalBuddhaTandoori.com`,
     description: `The Royal Buddha Tandoori Moraira website`,
     author: `@sandeshsth`,
+    phone: '+34966490830',
+    email: 'royalbuddhatandoori@gmail.com'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
