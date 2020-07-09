@@ -10,10 +10,11 @@ import menu4 from '../images/menu/4.jpg';
 import menu5 from '../images/menu/5.jpg';
 import menu6 from '../images/menu/6.jpg';
 import menu7 from '../images/menu/7.jpg';
+import menu8 from '../images/menu/8.jpg';
 
 import s from './menu.module.scss';
 
-const menuImages = [menu1, menu2, menu3, menu4, menu5, menu6, menu7];
+const menuImages = [menu1, menu2, menu3, menu4, menu5, menu6, menu7, menu8];
 
 const MenuPage = () => (
   <Layout>
